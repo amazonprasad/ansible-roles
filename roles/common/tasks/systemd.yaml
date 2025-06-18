@@ -13,7 +13,7 @@
     state: restarted
     enabled: yes
 
-- name: "Unmask the {{component}} service"
+# - name: "Unmask the {{component}} service"
 #   ansible.builtin.systemd:
 #     name: "{{component}}"
 #     masked: no
