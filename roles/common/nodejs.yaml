@@ -5,6 +5,7 @@
     ansible.builtin.package:
       name: nodejs
       state: present
+ 
   - name: instant dependenices
     ansible.builtin.command: npm install 
     args:
