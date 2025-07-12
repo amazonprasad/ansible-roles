@@ -13,13 +13,13 @@
     state: restarted
     enabled: yes
 
-# - name: "Unmask the {{component}} service"
-#   ansible.builtin.systemd:
-#     name: "{{component}}"
-#     masked: no
+- name: "Unmask the {{component}} service"
+  ansible.builtin.systemd:
+    name: "{{component}}"
+    masked: no
 
-# - name: "Start and enable {{component}} service"
-#   ansible.builtin.systemd:
-#     name: "{{component}}"
-#     enabled: yes
-#     state: started
+- name: "Start and enable {{component}} service"
+  ansible.builtin.systemd:
+    name: "{{component}}"
+    enabled: yes
+    state: started
